@@ -1,0 +1,40 @@
+{
+  "name": "beast11backend",
+  "version": "1.0.0",
+  "description": "Backend server for Beast11 fantasy app using Node.js and TypeScript",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IM-Mukesh/Beast11Backend.git"
+  },
+  "keywords": [
+    "fantasy",
+    "backend",
+    "typescript",
+    "node",
+    "express",
+    "beast11"
+  ],
+  "author": "IM-Mukesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IM-Mukesh/Beast11Backend/issues"
+  },
+  "homepage": "https://github.com/IM-Mukesh/Beast11Backend#readme",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
