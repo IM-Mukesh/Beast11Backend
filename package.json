@@ -29,6 +29,10 @@
   "homepage": "https://github.com/IM-Mukesh/Beast11Backend#readme",
   "type": "commonjs",
   "dependencies": {
+    "@supabase/supabase-js": "^2.49.4",
+    "@types/cors": "^2.8.17",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
     "express": "^5.1.0"
   },
   "devDependencies": {
