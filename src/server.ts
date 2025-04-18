@@ -1,4 +1,4 @@
-import express, { Request, Response, NextFunction, Router } from 'express';
+import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 
@@ -29,6 +29,10 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
     message: 'Internal server error',
     error: process.env.NODE_ENV === 'development' ? err : undefined
   });
+});
+
+app.get('/', (req,res)=>{
+  res.send("hello world!");
 });
 
 // Start server
