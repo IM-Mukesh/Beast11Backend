@@ -1,11 +1,14 @@
 # Node modules
 node_modules/
+path/
 
 # Build output
 dist/
 
 # Env variables
 .env
+
+info.txt 
 
 # Logs
 logs/
