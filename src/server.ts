@@ -31,11 +31,16 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
   });
 });
 
-app.get('/', (req,res)=>{
-  res.send("hello world!");
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Welcome to Beast11 Fantasy Sports API',
+    status: 'Server is running',
+    version: '1.0.0',
+    documentation: 'API documentation coming soon'
+  });
 });
 
 // Start server
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`🚀 Beast11 Backend Server is running on http://localhost:${port}`);
 });
